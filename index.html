@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKFitness - The best fitness gym in the town</title>
+    <link rel="icon" type="image/x-icon" href="fitness.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+</head>
+
+<body class='overflow-x-hidden'>
+    <div class="container mx-auto">
+        <header>
+            <nav class="flex justify-between">
+                <div class="logo font-bold flex items-center text-blue">Fitness Website</div>
+                <ul class="navbar flex items-center">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact Us</li>
+                    <li><button class="btn" onclick="join()">Join Now</button>
+                      <script>
+                        function join(){
+                          alert("Create Account First!")
+                        }
+                      </script></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+        <main class="min-h-screen">
+            <section class="section1">
+                <div class="flex">
+                    <div class="topleft flex flex-col justify-center px-2">
+                        <div class=" text-center">
+                            <img class="dumbellimg" src="dumbell.png" alt="">
+                        </div>
+                        <h1 class="my-1 text-center">The best fitness Gym in the town is here</h1>
+                        <p class=" text-center">Many people who go to the gym often are quite aware of their diet and consume healthier food on average.
+                            Hence, if you currently struggle with your diet and want to make it healthier in the long run,
+                            you may also want to join the gym since you will meet many like-minded people who can give you valuable tips to improve your nutrition.
+                        </p>
+                        <script>var countDownDate = new Date("oct 27, 2022 15:37:25").getTime();
+ 
+                            var x = setInterval(function() {
+                             
+                              var now = new Date().getTime();
+                             
+                              var distance = countDownDate - now;
+                             
+                              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                             
+                              document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                              + minutes + "m " + seconds + "s ";
+                             
+                              if (distance < 0) {
+                                clearInterval(x);
+                                document.getElementById("demo").innerHTML = "EXPIRED";
+                              }
+                            }, 1000); </script>
+                            <!-- Display the countdown timer in an element -->
+                            <p class="deal text-center">The deal ends in .....<span id="demo"></span></p>
+                            <div class="buttons">
+                                <button class="btn">Join now</button>
+                                <button class="btn">Contact Us</button>
+                            </div>
+                    </div>
+                    <div class="topright flex justify-center">
+                        <img class="gymimg" src="gym.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="section2">
+                <h1 class="text-center my-2">Pricing</h1>
+                <div class="boxes flex justify-center">
+                    <div class="box">
+                        <h2>Free</h2>
+                        <ul>
+                            <li class="highlighted">₹0/month</li>
+                            <li>Training included</li>
+                            <li>Staff support</li>
+                            <li><button class="btn" onclick="free()">Signup Now</button>
+                              <script>
+                                function free(){
+                                  alert("oops, you are late, we are full!")
+                                }
+                              </script></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h2>Popular</h2>
+                        <ul>
+                            <li class="highlighted">₹150/month</li>
+                            <li>Training overview</li>
+                            <li>Beginner's classes</li>
+                            <li>Staff support</li>
+                            <li><button class="btn" onclick="free()">Signup Now</button>
+                              <script>
+                                function free(){
+                                  alert("oops, you are late, we are full!")
+                                }
+                              </script></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h2>professional</h2>
+                        <ul>
+                            <li class="highlighted">₹500/month</li>
+                            <li>Training overview</li>
+                            <li>Beginner's classes</li>
+                            <li>Staff support</li>
+                            <li>Olympic Weightlifting</li>
+                            <li>Personal Trainer</li>
+                            <li><button class="btn" onclick="free()">Signup Now</button>
+                            <script>
+                              function free(){
+                                alert("oops, you are late, we are full!")
+                              }
+                            </script></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+            <hr>
+            <section class="section3">
+                <h1 class="text-center my-2">Compare Plans</h1>
+                <div class="container plantable">
+                    <table class="table text-center">
+                      <thead>
+                        <tr>
+                          <th></th><th>Free</th>
+                          <th>Popular</th>
+                          <th>professional</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row" class="text-start">Public</th>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Private</th>
+                          <td>-</td>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                        </tr>
+                      </tbody>
+              
+                      <tbody>
+                        <tr>
+                          <th scope="row" class="text-start">Permissions</th>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Sharing</th>
+                          <td>-</td>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Unlimited members</th>
+                          <td>-</td>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Extra security</th>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>Yes</svg></td>
+                        </tr>
+                      </tbody>
+                    </table>
+            </section>
+            <hr>
+        </main>
+        <div class="footer">
+          <h2><B>Created by Anish</B></h2>
+        </div>
+
+    </div>
+</body>
+
+</html>
